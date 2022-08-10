@@ -1,0 +1,77 @@
+/*> colors <*/
+.csSignature p, .nombreFooterSections p {color: #2c2c2c; text-shadow: none;}
+h3 {color: #bdbdbd; border-bottom: 3px solid #585858; font-family: avBold; padding: 10px 0; font-size: 18px;letter-spacing: 0.3em;text-align: right;}
+    ul li {color:#bdbdbd; font-size: 18px; text-shadow: 2px 2px 0px #00000080;}
+.csGalCont h2 {color: #bdbdbd; width: 100%; min-width: none; max-width: none; margin: 10px 0; padding: 10px 0; text-align: right; text-align: right;}
+.mainFooterSections {background: linear-gradient(180deg, #000000 0%, #00000000 100%); padding: 50px 0;}
+
+label, input, textarea { color: white; font-family: avReg; font-size: 16px; padding: 5px; text-align: left;}
+input, textarea { background-color: #3f3f3f; border: 0; border-radius: 5px; color: white;}
+small {color: white; font-family: avLight;}
+.linkTxt {color: aqua;}
+
+/*> layout <*/
+.csSignature{width: 100%; margin:0; padding: 25px 0; text-align: center;}
+.csSection{background: transparent;}
+.csImg{display: block; border-radius: 10px; margin: 0; padding: 0;}
+.imgDouble{margin: 0; padding: 0; margin-bottom: 10px;}
+.marginRight{margin-right: 10px;}
+
+#csHeader{width: 100%; text-align: center; margin: 0; padding: 0; margin-bottom: 200px;}
+    #csHeader h1{margin: 200px auto; max-width: 1000px;}
+    .infoContainer{max-width: 1200px; margin: 0 auto; display: flex;}
+        .infoBreak{width: 30%; display:block; margin: 0 auto;}
+            .csInfoDesc, ul li {font-family: avLight; text-align: left; text-shadow: none;}
+                .italicP{font-family: avIta;}
+
+.csGal {margin: 0; padding: 0; margin-bottom: 200px;}
+    .csGalCont {max-width: 1200px; margin: 0 auto;}
+        .imgCont{display: flex; margin: 0; padding: 0;}
+        .imgMargBottom{margin: 0; padding: 0; margin-bottom: 10px;}
+        .csImgDesc {width: 100%; min-width: none; max-width: none; font-family: avLight; width: 100%; margin: 15px 0; padding: 10px 0;}
+        .csBtnCont{width: 100%; max-width: 1200px; text-align: center; display: flex; align-items: center; margin: 0 auto;}
+            .csBtnCont a{margin: auto;}
+        .videoSections{margin:0; padding: 0;}
+
+.mainFooterSections, .nombreFooterSections {text-align: center;}
+
+.formGroup {display: flex; margin: 20px auto; width: 90%; max-width: 1200px; flex-wrap: wrap;}
+.formGroup div{display: block; margin: auto;}
+.formGroup div label, .formGroup div input {display: block;}
+#csHeader #contactTitle {margin-bottom: 50px; padding: 0;}
+#button {margin: 50px auto; background-color: transparent; cursor: pointer;}
+textarea {width: 90%; max-width: 1100px;}
+#contactParagraph {width: 90%; max-width: 1200px; margin: auto;}
+
+#audio{display: flex;}
+.audioCont {display: block; float: left; width: 98%; max-width: 1200px; padding: 1%; border-radius: 10px; margin-bottom: 20px; background-color: #ffffff08;}
+    audio{display: block; width: 40%; float: left; margin: 0; padding: 0; border-radius: 10px;}
+    .djInfo{display: block; width: 51%; height: auto; margin: 0 0 0 1%; padding: 0 4%; float: left; background-color: #ffffff08; border-radius: 10px;}
+        .pLine{margin-bottom: 5px; margin-left: 0;}
+        .djTitle{border-bottom: 0; text-align: left; margin-top: 0; margin-bottom: 10px;}
+    .videoMulti{margin: 0;}
+    .dotCont{display: flex; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0; justify-content: center;}
+        .dot{display: block; float: left; margin: 0 7px; width: 15px; height: 15px; background-color: #ffffff18; cursor: pointer; border-radius: 8px;}
+
+/*> screen <*/
+@media all and (max-width : 1200px ){
+    #csHeader h1{max-width: none; width: 90%;}
+    .csGalCont {max-width: none; width: 90%;}
+    .imgCont{display: block;}
+    .csImg{width: 100%; margin: 0; margin-bottom: 10px;}
+    video{width: 100%;}
+    .nombreFooterSections{background: transparent;}
+    .imgDouble{margin-bottom: 0;}
+    .marginRight{margin-right: 0;}
+    .navigationBtn a img{margin: auto;}
+}
+
+
+@media all and (max-width : 800px ){
+    .djInfo{width: 92%; margin: 0;}
+    audio{width: 100%; margin-bottom: 1%;}
+    .infoContainer{max-width: none; display: block;}
+    .infoBreak{width: 80%;}
+    .infoBreak p{max-width: none; font-size: 18px;}
+    h3{font-size: 15px;}
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+    <link rel="preload" href="css/light.css" as="style"/>
+    <link rel="preload" href="css/dark.css" as="style"/>
+    <link rel="preload" href="css/sectionsLight.css" as="style"/>
+    <link rel="preload" href="css/sectionsDark.css" as="style"/>
+
+    <link rel="StyleSheet" href="css/main.css" id="styleMode" media="all" type="text/css">
+    <link rel="StyleSheet" href="css/sections.css" id="sectionMode" media="all" type="text/css">
+    <script src="js/main.js" async="async"></script>
+    <title>Héctor Cerón Cabrera · Portfolio</title>
+</head>
+<body onload="theme(1,0)">
+    <nav id="navigation">
+        <div class="navContainer">
+            <div class="navNombre">
+                <p class="nombre">HÉCTOR CERÓN CABRERA</p><p class="cargo"> UX DESIGNER</p>
+            </div>
+            <!--div class="navButtons">
+                <a class="lightBtn" id="themeBtn" onclick="theme()" style="cursor: pointer;">THEME</a>
+                <a class="lightBtn" id="fontBtn" style="cursor: pointer;">FONT SIZE</a>
+            </div-->
+        </div>
+    </nav>
+    <div class="navigationBtn" id="navBtn">
+        <a onclick="openFloatMenu()" style="cursor: pointer;"><img src="icos/menu.png" id="menuIco" alt="Navigation"></a>
+    </div>
+    <section id="menuFlotante" class="menuFlotanteHide" onclick="closeFloatMenu()">
+        <div id="menuFlotanteCont" class="contMenu">
+            <a class="floatMenu menuSection menuCerrar" onclick="closeFloatMenu()" style="cursor: pointer; margin-top: 40px;">CLOSE MENU &times;</a>
+            <a class="floatMenu menuSection menuCerrar" onclick="theme(1,1)" style="cursor: pointer;">CHANGE THEME &there4;</a>
+            <a href="#00" class="floatMenu menuSection" onclick="closeFloatMenu()">DEMO</a>
+            <a href="#introduce" class="floatMenu menuSection" onclick="closeFloatMenu()">ABOUT ME</a>
+            <p>CASE STUDY</p>
+            <a href="#01" class="floatMenu" onclick="closeFloatMenu()">GESTIONAPP</a>
+            <a href="#02" class="floatMenu" onclick="closeFloatMenu()">AHORRAP</a>
+            <a href="#03" class="floatMenu" onclick="closeFloatMenu()">CONEXION INSTANTANEA</a>
+            <a href="#04" class="floatMenu" onclick="closeFloatMenu()">GRAPHIC LAB</a>
+            <a href="#05" class="floatMenu" onclick="closeFloatMenu()">INSURAUTO (SCL)</a>
+            <a href="#06" class="floatMenu" onclick="closeFloatMenu()">SAM</a>
+            <a href="#07" class="floatMenu" onclick="closeFloatMenu()">COMPUTER SECURITY</a>
+            <a href="#08" class="floatMenu" onclick="closeFloatMenu()">MULTIMEDIA</a>
+            <a href="#09" class="floatMenu" onclick="closeFloatMenu()">CERTIFICATION</a>
+            <a href="#11" class="floatMenu menuSection" onclick="closeFloatMenu()">SOFTWARE</a>
+            <a href="resume.pdf" target="_blank" class="floatMenu menuSection">RESUME &#9675;</a>
+            <a href="contact.php" class="floatMenu">CONTACT &#9675;</a>
+        </div>
+    </section>
+    <section class="sectionVideo">
+        <div class="videoContainer">
+            <video id="00" src="video/demo.mp4" controls style="width: 100%;"></video>
+        </div>
+    </section>
+    <section class="sectionMain" id="introduce">
+        <div class="sectionContainer" id="intTxt">
+            <div class="textContainer">
+                <h1 id="title1">About me</h1>
+                <h2 id="subtitle1">A computer scientist with soul of designer</h2>
+                <p id="text1">I am disciplined, committed, creative and hardworking, and I always strive to meet and exceed expectations, even though it requires a lot of effort. I am passionate about design, going beyond aesthetics, it is a way of communicating with the world through a universal language.</p>
+            </div>
+            <img class="backgroundImg" src="galeries/home/Bee.png" alt="Abeja en la flor. Foto de H.Cerón C."><span>Las pequeñas cosas · Héctor Cerón · 2017</span>
+        </div>
+    </section>
+
+    <section class="sectionR" id="01">
+        <div class="sectionContainer" id="studyCase1">
+            <div class="studyCase" id="sc1">
+                <h1>GestionApp</h1>
+                <h2>An app to create better schedules for college students.</h2>
+                <p>This is a prototype of an application that gives college students all the information they require to put together a schedule that fits their needs, by evaluating overlaps, places and teachers.</p>
+                <a class="lightBtn" href="gestionapp.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionL" id="02">
+        <div class="sectionContainer" id="studyCase2">
+            <div class="studyCase" id="sc2">
+                <h1>AhorrApp</h1>
+                <h2>Online expenses calculator.</h2>
+                <p>Ahorrapp is a web application that follows the guidelines of Material Design (2017), which was created to maintain control of personal finances, with the great advantage of being a multiplatform app.</p>
+                <a class="lightBtn" href="ahorrapp.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionR" id="03">
+        <div class="sectionContainer" id="studyCase3">
+            <div class="studyCase" id="sc3">
+                <h1>Conexión Instantánea</h1>
+                <h2>A network of local merchants and their customers.</h2>
+                <p>The entire creation process of a portal that connects local micro-businesses with each other (B2B), as well as with their clients (C2B); to create a solid and reliable local market network.</p>
+                <a class="lightBtn" href="conexion.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionL" id="04">
+        <div class="sectionContainer" id="studyCase4">
+            <div class="studyCase" id="sc4">
+                <h1>Graphic Lab</h1>
+                <h2>A feasibility study to create a new company.</h2>
+                <p>Market and technical analysis to create a company that offers branding services to other firms, mainly medium and small businesses.</p>
+                <a class="lightBtn" href="graphic.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionR" id="05">
+        <div class="sectionContainer" id="studyCase5">
+            <div class="studyCase" id="sc5">
+                <h1>Insurauto (SCL)</h1>
+                <h2>Auto insurance online quoting system.</h2>
+                <p>Here, you can find the functional requirements for an online project of an auto insurance company. You will see some basic flowcharts, as well as some screens in medium fidelity.</p>
+                <a class="lightBtn" href="insurauto.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionL" id="06">
+        <div class="sectionContainer" id="studyCase6">
+            <div class="studyCase" id="sc6">
+                <h1>SAM</h1>
+                <h2>Business management system.</h2>
+                <p>An online application for managing small and medium-sized local convenience stores. The ideation process and some screens of the hi-fi prototype are presented.</p>
+                <a class="lightBtn" href="sam.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionR" id="07">
+        <div class="sectionContainer" id="studyCase7">
+            <div class="studyCase" id="sc7">
+                <h1>Computer security campaigns</h1>
+                <h2>Raise awareness of the importance of computer security</h2>
+                <p>The process of developing awareness campaigns about computer security, based on the analysis of the current situation of the company, to strenghten its weaknesses and detect opportunities.</p>
+                <a class="lightBtn" href="awareness.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionL" id="08">
+        <div class="sectionContainer" id="studyCase8">
+            <div class="studyCase" id="sc8">
+                <h1>Multimedia</h1>
+                <h2>UX design + multimedia.</h2>
+                <p>The way stories are told makes a difference, which is why multimedia skills enhance UX design, allowing to communicate the findings in a way that engages viewers.</p>
+                <a class="lightBtn" href="multimedia.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="sectionR" id="09">
+        <div class="sectionContainer" id="studyCase9">
+            <div class="studyCase" id="sc9">
+                <h1>Google UX design</h1>
+                <h2>The project made for a UX design certification.</h2>
+                <p>Evidence of a professional user experience design certification offered by Google. As this project advances, this section will be updated every week.</p>
+                <a class="lightBtn" href="googleux.html">SEE MORE</a>
+            </div>
+        </div>
+    </section>
+    <!--section class="sectionR" id="10">
+        <div class="sectionContainer" id="studyCase10">
+            <div class="studyCase" id="sc10">
+                <h1>Coding</h1>
+                <h2>Some evidences of coding in various languages.</h2>
+                <p>JavaScript, CSS, PHP, MySQL, C++, Java, Objective C and Python. More than speaking with a language, speaking with logic.</p>
+                <a class="lightBtn" href="">SEE MORE</a>
+            </div>
+        </div>
+    </section-->
+
+    <section class="sectionSw" id="11">
+        <div class="sectionContainer">
+            <h1>Software</h1>
+            <h2>This website has been prototyped with Figma, all the multimedia resources you see here, were created with some of the software below.</h2>
+            <div class="swContainer">
+                <img height="90px" id="uxApps" src="galeries/home/Sw-UIX.png" alt="UI/UX apps: Figma, InVision, Sketch, XD, Transmit and VS Code">
+                <img height="90px" id="adobeApps" src="galeries/home/Sw-Adobe.png" alt="Adobe apps: Photoshop, Illustrator, Dreamweaver, Premiere and AfrerEffects">
+                <img height="90px" id="proApps" src="galeries/home/Sw-ProApps.png" alt="Pro apps: Final Cut Pro, Motion, Logic Pro, Pixelmator, Maya and Cheetah">
+                <img height="90px" id="officeApps" src="galeries/home/Sw-Office.png" alt="Office apps: Pages and Keynote">
+            </div>
+        </div>
+    </section>
+    <footer class="mainFooter">
+        <div class="containerFooter">
+            <div class="nombreFooter"><p class="nombre">HÉCTOR CERÓN CABRERA</p><p class="cargo"> UX DESIGNER</p></div>
+            <div class="contactFooter">
+                <a name="mail" href="contact.php"><img src="icos/mail.png" id="message" alt="Send me an e-Mail" width="30px"></a>
+                <a name="linkedIn" href="https://www.linkedin.com/in/certech" target="_blank"><img src="icos/linkedin.png" id="linkedin" alt="Go to my LinkedIn profile" width="30px"></a>
+                <a name="whats" href="https://api.whatsapp.com/send?phone=5215531022965" target="_blank"><img src="icos/whats.png" id="whatsapp" alt="Send me a WhatsApp" width="30px"></a>
+                <p class="cargo" style="font-family: avReg;"> CDMX <img src="galeries/home/mex.png" alt="Mexican flag" width="50px" style="border-radius: 5px;"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
